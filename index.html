@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1 class="titulo-de-pagina">Flexbox</h1>
+        <h1 class="titulo-de-pagina">Flexbox - Docs</h1>
         <nav>
             <ul>
                 <li><a href=""></a>
@@ -21,8 +21,7 @@
 
         </nav>
     </header>
-    <h2 class="titulo-de-artigo">Documentação</h2>
-    <h3 class="subtitulo-de-artigo">display: flex</h3>
+    <h2 class="titulo-de-artigo">display: flex</h2>
     <p class="P">
         A primeira propriedade que precisa ser declarada para que o Flexbox funcione! Algumas propiedades como flex-direction, justify-content e align-content já vem com os valores padrão:</p>
 
@@ -53,18 +52,126 @@
         <div class="contido"></div>
         <div class="contido"></div>
     </div>
-
-    <h3 class="subtitulo-de-artigo">Flex-direction:</h3>
-    <p>Essa propriedade serve para dizer em qual direção o container deseja impilhar os itens flex</p>
-    <p>Exemplo:</p>
-
-    <div>
-        <div class=""></div>
-        <div class=""></div>
-        <div class=""></div>
-        <div class=""></div>
-        <div class=""></div>
+    <br>
+    <h3 class="titulo-de-artigo">Flex-direction:</h3>
+    <p>Essa propriedade serve para dizer em qual direção o container deseja impilhar os itens flex. Recheada de alguns valores.</p>
+    <br>
+    <br>
+    <h4 class="titulo-contido">Exemplo: &ltFlex-direction: column&gt</h4>
+    <p>Valor que deixa empilha os itens flexíveis verticalmente (de cima para baixo):</p>
+    <br>
+    <div class="container2">
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
     </div>
+    <br>
+    <h4 class="titulo-contido">Exemplo: &ltFlex-direction: column-reverse&gt</h4>
+    <p>Valor que empilha os itens flexíveis verticalmente (mas de baixo para cima):</p>
+    <div class="container3">
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+    </div>
+    <br>
+    <h4 class="titulo-contido">Exemplo: &ltFlex-direction: row&gt</h4>
+    <p>valor que empilha os itens flexíveis horizontalmente (da esquerda para a direita):</p>
+    <br>
+    <div class="container4">
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+    </div>
+    <br>
+    <h4 class="titulo-contido">Exemplo: &ltFlex-direction: row-reverse&gt</h4>
+    <p>Valor que empilha os itens flexíveis horizoltalmente (agora da direita para a esquerda):</p>
+    <br>
+    <div class="container5">
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+    </div>
+    <br>
+    <h3 class="titulo-de-artigo">Flex-wrap</h3>
+    <p>A flex-wrap propriedade especifica se os itens flexíveis devem ser agrupados ou não.</p>
+    <p>Os exemplos abaixo possuem 11 itens flexíveis, para melhor demonstrar a flex-wrappropriedade:</p>
+    <h4 class="titulo-contido">Exemplo: &ltFlex-wrap: wrap&gt</h4>
+    <p> O wrap: valor que especifica que os itens flexíveis serão agrupados se necessário:</p>
+    <br>
+    <div class="container6">
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+    </div>
+    <br>
+    <h4 class="titulo-contido">Exemplo: &ltFlex-wrap: nowrap&gt<h4>
+    <p>O nowrap: valor especifica que os itens flexíveis não serão agrupados (este é o padrão):</p>
+    <br>
+    <div class="container7">
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+    </div>
+    <br>
+    <h4 class="titulo-contido">Exemplo: &ltFlex-wrap: wrap-reverse&gt<h4>
+    <p>O wrap-reverse: valor que especifica que os itens flexíveis serão agrupados se necessário, na ordem inversa;</p>
+    <br>
+    <div class="container8">
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+    </div>
+    <br>
+    <h3 class="titulo-de-artigo">Flex-flow<h3>
+    <h4 class="titulo-contido">Flex-flow: row wrap</h4>
+    <p>A flex-flow: a propriedade é uma propriedade abreviada para definir as propriedades flex-direction e flex-wrap.</p>
+    <br>
+    <div class="container9">
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+    </div>
+    <br>
+    <h3 class="titulo-de-artigo">Justify-content<h3>
+    <h4 class="titulo-contido">justify-content: center</h4>
+
 
 </body>
 </html>
+ 

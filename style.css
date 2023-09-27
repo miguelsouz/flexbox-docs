@@ -25,6 +25,15 @@ body {
     background-color: var(--cor-de-fundo);
     font-family: var(--font-secundária);
 }
+
+.contido {
+    width: 100px;
+    box-shadow:#000 6px 8px 4px;
+    height: 100px;
+    background-color:#fa7900;
+    border: 5px  solid #1a1515;
+}
+
 .container {
     height: 300px;
     background-color: antiquewhite;
@@ -32,13 +41,6 @@ body {
     display: flex;
 }
 
-.contido {
-    width: 100px;
-    box-shadow:#000 6px 8px 4px;
-    height: 100px;
-    background-color:#fa7900;
-    border: 2px solid #1a1515;
-}
 .container2 {
     height: 300px;
     background-color: antiquewhite;
@@ -78,6 +80,7 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
+
 .container7 {
     height: 300px;
     background-color: antiquewhite;
@@ -85,6 +88,7 @@ body {
     display: flex;
     flex-wrap: nowrap;
 }
+
 .container8 {
     height: 300px;
     background-color: antiquewhite;
@@ -92,6 +96,7 @@ body {
     display: flex;
     flex-wrap: wrap-reverse;
 }
+
 .container9 {
     height: 300px;
     background-color: antiquewhite;
@@ -99,15 +104,149 @@ body {
     display: flex;
     flex-flow: row wrap;
 }
+
 .container10 {
     height: 300px;
     background-color: antiquewhite;
     border: 10px 5px solid #000; /*Equivalente á cor #000000 */
     display: flex;
-    justify-content: ;
+    justify-content: center;
 }
 
+.container11 {
+    height: 300px;
+    background-color: antiquewhite;
+    border: 10px 5px solid #000; /*Equivalente á cor #000000 */
+    display: flex;
+    justify-content: flex-start;
+}
 
+.container12 {
+    height: 300px;
+    background-color: antiquewhite;
+    border: 10px 5px solid #000; /*Equivalente á cor #000000 */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container13 {
+    height: 300px;
+    background-color: antiquewhite;
+    border: 10px 5px solid #000; /*Equivalente á cor #000000 */
+    display: flex;
+    justify-content: space-around;
+}
+
+.container14 {
+    height: 300px;
+    background-color: antiquewhite;
+    border: 10px 5px solid #000; /*Equivalente á cor #000000 */
+    display: flex;
+    justify-content: space-between;
+}
+
+.container15 {
+    height: 300px;
+    background-color: antiquewhite;
+    border: 10px 5px solid #000; /*Equivalente á cor #000000 */
+    display: flex;
+    align-items: center;
+}
+
+.container16 {
+    height: 300px;
+    background-color: antiquewhite;
+    border: 10px 5px solid #000; /*Equivalente á cor #000000 */
+    display: flex;
+    align-items: flex-start;
+}
+
+.container17 {
+    height: 300px;
+    background-color: antiquewhite;
+    border: 10px 5px solid #000; /*Equivalente á cor #000000 */
+    display: flex;
+    align-items: flex-end;
+}
+
+.container18 {
+    height: 300px;
+    background-color: antiquewhite;
+    border: 10px 5px solid #000; /*Equivalente á cor #000000 */
+    display: flex;
+    align-items: stretch;
+}
+
+.container19 {
+    height: 300px;
+    background-color: antiquewhite;
+    border: 10px 5px solid #000; /*Equivalente á cor #000000 */
+    display: flex;
+    align-items: baseline;
+}
+
+.container20 {
+    height: 300px;
+    background-color: antiquewhite;
+    border: 10px 5px solid #000; /*Equivalente á cor #000000 */
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.container21 {
+    height: 300px;
+    background-color: antiquewhite;
+    border: 10px 5px solid #000; /*Equivalente á cor #000000 */
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.container22 {
+    height: 400px;
+    background-color: antiquewhite;
+    border: 10px 5px solid #000; /*Equivalente á cor #000000 */
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+
+.container23 {
+    height: 500px;
+    background-color: antiquewhite;
+    border: 10px 5px solid #000; /*Equivalente á cor #000000 */
+    flex-wrap:wrap;
+    display: flex;
+    align-content: center;
+}
+
+.container24 {
+    height: 500px;
+    background-color: antiquewhite;
+    border: 10px 5px solid #000; /*Equivalente á cor #000000 */
+    flex-wrap: wrap;
+    display: flex;
+    align-content: flex-start;
+}
+
+.container25 {
+    height: 500px;
+    background-color: antiquewhite;
+    border: 10px 5px solid #000; /*Equivalente á cor #000000 */
+    flex-wrap: wrap;
+    display: flex;
+    align-content: flex-end;
+}
+
+.container26 {
+    height: 300px;
+    background-color: antiquewhite;
+    border: 10px 5px solid #000; /*Equivalente á cor #000000 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .titulo-de-pagina {
     color:#000;
     text-align:center;
@@ -117,7 +256,6 @@ body {
     font-size: 50pt;
     font-family: var(--font-secundária);
 }
-
 
 .titulo-de-artigo{
     color:#837474;
@@ -155,6 +293,18 @@ p {
     color: var(--cor-secundaria);
     line-height: 1.2;
     font-style:italic;
-    text-align:initial;
+    text-align:center;
     font-size: 18pt;
+}
+
+div>p{
+    color:#ebe0e0;
+    line-height: 1.5;
+    text-shadow: #000 4px 4px 5px;
+    font-weight:bold;
+    font-size: 20pt;
+    font-family: var(--font-secundaria);
+    font-style:italic;
+    margin-bottom: 10px;
+    text-align: center;
 }

@@ -186,7 +186,7 @@ body {
 }
 
 .container20 {
-    height: 300px;
+    height: 500px;
     background-color: antiquewhite;
     border: 10px 5px solid #000; /*Equivalente á cor #000000 */
     display: flex;
@@ -195,7 +195,7 @@ body {
 }
 
 .container21 {
-    height: 300px;
+    height: 500px;
     background-color: antiquewhite;
     border: 10px 5px solid #000; /*Equivalente á cor #000000 */
     display: flex;
@@ -297,7 +297,7 @@ p {
     font-size: 18pt;
 }
 
-div>p{
+div.contido{
     color:#ebe0e0;
     line-height: 1.5;
     text-shadow: #000 4px 4px 5px;
@@ -307,4 +307,5 @@ div>p{
     font-style:italic;
     margin-bottom: 10px;
     text-align: center;
-}
+    align-items: center;
+}  

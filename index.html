@@ -8,463 +8,514 @@
 </head>
 <body>
     <header>
-        <h1 class="titulo-de-pagina">Flexbox - Docs</h1>
+        <h1 class="titulo-de-pagina" id="#menu">Flexbox - Docs</h1>
         <nav>
             <ul>
-                <li><a href=""></a>
+                <li>
+                    <a href="#contatos">Contados</a>
                 </li>
-                <li><a href=""></a>
+                <li>
+                    <a href="#displayflex">Display Flex</a>
                 </li>
-                <li><a href=""></a>
+                <li>
+                    <a href="#flexdirection">Flex-direction</a>
+                </li>
+                <li>
+                    <a href="#flexwrap">Flex-wrap</a>
+                </li>
+                <li>
+                    <a href="#flexflow">Flex-flow</a>
+                </li>
+                <li>
+                    <a href="#justifycontent">Justify-content</a>
+                </li>
+                <li>
+                    <a href="#alignitems">Align-items</a>
+                </li>
+                <li>
+                    <a href="#aligncontent">Align-Content</a>
+                </li>
+                <li>
+                    <a href="#perfectcentering">Bônus</a>
                 </li>
             </ul>
-
         </nav>
     </header>
-    <h2 class="titulo-de-artigo">display: flex</h2>
-    <p class="P">
-        A primeira propriedade que precisa ser declarada para que o Flexbox funcione! Algumas propiedades como flex-direction, justify-content e align-content já vem com os valores padrão:</p>
+    <article class="article" id="displayflex">
+        <h2 class="titulo-de-artigo">display: flex</h2>
+        <details class="button2">
+            <h4 class="titulo-contido">Display: flex;  é a primeira propriedade que precisa ser declarada dentro do container desejado para que o Flexbox funcione! Algumas propiedades como flex-direction, justify-content e align-content já vem com os valores padrão:</h4>
+            <table>
+                <tr>
+                    <th class="propriedade">Propriedade:</th>
+                    <th class="valor">Valor:</th>
+                </tr>
+                <tr>
+                    <td class="propriedade">Flex-direction</td>
+                    <td class="valor">row</td>
+                </tr>
+                <tr>
+                    <td class="propriedade">justify-content</td>
+                    <td class="valor">flex-start</td>
+                </tr>
+                <tr>
+                    <td class="propriedade">align-content</td>
+                    <td class="valor">flex-start</td>
+                </tr>
+            </table>
+            <h3 class="titulo-contido">Exemplo: display: flex;</h3>
+            <h4 class="titulo-contido">Este exemplo deve ser entendido como um começo, agora com esse elemento declarado somos capazes de adicionar várias outras prioridades para a organização dos itens (agora flexsíveis).</h4>  
+            <div class="container">
+                <div class="contido">1</div>
+                <div class="contido">2</div>
+                <div class="contido">3</div>
+                <div class="contido">4</div>
+                <div class="contido">5</div>
+            </div>
+        </details>
+    </article>
+    <article class="article" id="flexdirection">
+        <h3 class="titulo-de-artigo">Flex-direction:</h3>
+        <details class="button2">
+            <h4 class="titulo-contido">Essa propriedade serve para dizer em qual direção o container deseja impilhar os itens flex. Recheada de alguns valores.</h4>
+            <br>
+            <h4 class="titulo-contido">Exemplo: &ltFlex-direction: column&gt</h4>
+            <p>Valor que deixa empilha os itens flexíveis verticalmente (de cima para baixo):</p>
+            <br>
+            <div class="container2">
+                <div class="contido">1</div>
+                <div class="contido">2</div>
+                <div class="contido">3</div>
+            </div>
+            <br>
+            <h4 class="titulo-contido">Exemplo: &ltFlex-direction: column-reverse&gt</h4>
+            <p>Valor que empilha os itens flexíveis verticalmente (mas de baixo para cima):</p>
+            <div class="container3">
+                <div class="contido">1</div>
+                <div class="contido">2</div>
+                <div class="contido">3</div>
+            </div>
+            <br>
+            <h4 class="titulo-contido">Exemplo: &ltFlex-direction: row&gt</h4>
+            <p>valor que empilha os itens flexíveis horizontalmente (da esquerda para a direita):</p>
+            <br>
+            <div class="container4">
+                <div class="contido">1</div>
+                <div class="contido">2</div>
+                <div class="contido">3</div>
+                <div class="contido">4</div>
+            </div>
+            <br>
+            <h4 class="titulo-contido">Exemplo: &ltFlex-direction: row-reverse&gt</h4>
+            <p>Valor que empilha os itens flexíveis horizoltalmente (agora da direita para a esquerda):</p>
+            <br>
+            <div class="container5">
+                <div class="contido">1</div>
+                <div class="contido">2</div>
+                <div class="contido">3</div>
+                <div class="contido">4</div>
+            </div>
+        </details>
+    </article> 
 
-    <table>
-        <tr>
-            <th class="propriedade">Propriedade</th>
-            <th class="valor">Valor</th>
-        </tr>
-        <tr>
-            <td class="propriedade">Flex-direction</td>
-            <td class="valor">row</td>
-        </tr>
-        <tr>
-            <td class="propriedade">justify-content</td>
-            <td class="valor">flex-start</td>
-        </tr>
-        <tr>
-            <td class="propriedade">align-content</td>
-            <td class="valor">flex-start</td>
-        </tr>
-    </table>
+    <article class="article"  id="flexwrap">
+        <h3 class="titulo-de-artigo">Flex-wrap</h3>
+        <details class="button2">
+            <h4 class="titulo-contido">A flex-wrap propriedade especifica se os itens flexíveis devem ser agrupados ou não.Os exemplos abaixo possuem 11 itens flexíveis, para melhor demonstrar a propriedade flex-wrap:</h4>
+                
+            <h4 class="titulo-contido">Exemplo: &ltFlex-wrap: wrap&gt</h4>
+            <p> O wrap: valor que especifica que os itens flexíveis serão agrupados se necessário:</p>
+            <br>
+            <div class="container6">
+                <div class="contido">1</div>
+                <div class="contido">2</div>
+                <div class="contido">3</div>
+                <div class="contido">4</div>
+                <div class="contido">5</div>
+                <div class="contido">6</div>
+                <div class="contido">7</div>
+                <div class="contido">8</div>
+                <div class="contido">9</div>
+                <div class="contido">10</div>
+                <div class="contido">11</div>
+            </div>
+            <br>
+            <h4 class="titulo-contido">Exemplo: &ltFlex-wrap: nowrap&gt<h4>
+            <p>O nowrap: valor especifica que os itens flexíveis não serão agrupados (este é o padrão):</p>
+            <br>
+            <div class="container7">
+                <div class="contido">1</div>
+                <div class="contido">2</div>
+                <div class="contido">3</div>
+                <div class="contido">4</div>
+                <div class="contido">5</div>
+                <div class="contido">6</div>
+                <div class="contido">7</div>
+                <div class="contido">8</div>
+                <div class="contido">9</div>
+                <div class="contido">10</div>
+                <div class="contido">11</div>
+            </div>
+            <br>
+            <h4 class="titulo-contido">Exemplo: &ltFlex-wrap: wrap-reverse&gt<h4>
+            <p>O wrap-reverse: valor que especifica que os itens flexíveis serão agrupados se necessário, na ordem inversa;</p>
+            <br>
+            <div class="container8">
+                <div class="contido">1</div>
+                <div class="contido">2</div>
+                <div class="contido">3</div>
+                <div class="contido">4</div>
+                <div class="contido">5</div>
+                <div class="contido">6</div>
+                <div class="contido">7</div>
+                <div class="contido">8</div>
+                <div class="contido">9</div>
+                <div class="contido">10</div>
+                <div class="contido">11</div>
+            </div>
+        </details>
+    </article>
 
-    <p>Exemplo:</p>  
-    <div class="container">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-        <div class="contido">5</div>
-    </div>
-    <br>
-    <h3 class="titulo-de-artigo">Flex-direction:</h3>
-    <p>Essa propriedade serve para dizer em qual direção o container deseja impilhar os itens flex. Recheada de alguns valores.</p>
-    <br>
-    <br>
-    <h4 class="titulo-contido">Exemplo: &ltFlex-direction: column&gt</h4>
-    <p>Valor que deixa empilha os itens flexíveis verticalmente (de cima para baixo):</p>
-    <br>
-    <div class="container2">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-    </div>
-    <br>
-    <h4 class="titulo-contido">Exemplo: &ltFlex-direction: column-reverse&gt</h4>
-    <p>Valor que empilha os itens flexíveis verticalmente (mas de baixo para cima):</p>
-    <div class="container3">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-    </div>
-    <br>
-    <h4 class="titulo-contido">Exemplo: &ltFlex-direction: row&gt</h4>
-    <p>valor que empilha os itens flexíveis horizontalmente (da esquerda para a direita):</p>
-    <br>
-    <div class="container4">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-    </div>
-    <br>
-    <h4 class="titulo-contido">Exemplo: &ltFlex-direction: row-reverse&gt</h4>
-    <p>Valor que empilha os itens flexíveis horizoltalmente (agora da direita para a esquerda):</p>
-    <br>
-    <div class="container5">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-    </div>
-    <br>
-    <h3 class="titulo-de-artigo">Flex-wrap</h3>
-    <p>A flex-wrap propriedade especifica se os itens flexíveis devem ser agrupados ou não.</p>
-    <p>Os exemplos abaixo possuem 11 itens flexíveis, para melhor demonstrar a flex-wrappropriedade:</p>
-    <h4 class="titulo-contido">Exemplo: &ltFlex-wrap: wrap&gt</h4>
-    <p> O wrap: valor que especifica que os itens flexíveis serão agrupados se necessário:</p>
-    <br>
-    <div class="container6">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-        <div class="contido">5</div>
-        <div class="contido">6</div>
-        <div class="contido">7</div>
-        <div class="contido">8</div>
-        <div class="contido">9</div>
-        <div class="contido">10</div>
-        <div class="contido">11</div>
-    </div>
-    <br>
-    <h4 class="titulo-contido">Exemplo: &ltFlex-wrap: nowrap&gt<h4>
-    <p>O nowrap: valor especifica que os itens flexíveis não serão agrupados (este é o padrão):</p>
-    <br>
-    <div class="container7">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-        <div class="contido">5</div>
-        <div class="contido">6</div>
-        <div class="contido">7</div>
-        <div class="contido">8</div>
-        <div class="contido">9</div>
-        <div class="contido">10</div>
-        <div class="contido">11</div>
-    </div>
-    <br>
-    <h4 class="titulo-contido">Exemplo: &ltFlex-wrap: wrap-reverse&gt<h4>
-    <p>O wrap-reverse: valor que especifica que os itens flexíveis serão agrupados se necessário, na ordem inversa;</p>
-    <br>
-    <div class="container8">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-        <div class="contido">5</div>
-        <div class="contido">6</div>
-        <div class="contido">7</div>
-        <div class="contido">8</div>
-        <div class="contido">9</div>
-        <div class="contido">10</div>
-        <div class="contido">11</div>
-    </div>
-    <br>
-    <h3 class="titulo-de-artigo">Flex-flow<h3>
-    <h4 class="titulo-contido">Exemplo: Flex-flow: row wrap;</h4>
-    <p>A flex-flow: a propriedade é uma propriedade abreviada para definir as propriedades flex-direction e flex-wrap.</p>
-    <br>
-    <div class="container9">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-        <div class="contido">5</div>
-        <div class="contido">6</div>
-        <div class="contido">7</div>
-        <div class="contido">8</div>
-        <div class="contido">9</div>
-        <div class="contido">10</div>
-        <div class="contido">11</div>
-    </div>
-    <br>
-    <h3 class="titulo-de-artigo">Justify-content<h3>
-    <h4 class="titulo-contido">Exemplo: justify-content: center;</h4>
-    <p>O center: valor que alinha os itens flexíveis no centro do contêiner desejado;</p>
-    <br>
-    <div class="container10">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-    </div>
-    <br>
-    <h4 class="titulo-contido">Exemplo: justify-content: Flex-start</h4>
-    <p>O flex-start: valor que alinha os itens flexíveis no início do contêiner (este é o padrão);</p>
-    <br>
-    <div class="container11">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
+    <article class="article" id="flexflow">
+        <h3 class="titulo-de-artigo">Flex-flow<h3>
+        <details class="button2">
+            <h4 class="titulo-contido">Exemplo: Flex-flow: row wrap;</h4>
+            <p>A flex-flow: a propriedade é uma propriedade abreviada para definir as propriedades flex-direction e flex-wrap.</p>
+            <br>
+            <div class="container9">
+                <div class="contido">1</div>
+                <div class="contido">2</div>
+                <div class="contido">3</div>
+                <div class="contido">4</div>
+                <div class="contido">5</div>
+                <div class="contido">6</div>
+                <div class="contido">7</div>
+                <div class="contido">8</div>
+                <div class="contido">9</div>
+                <div class="contido">10</div>
+                <div class="contido">11</div>
+            </div>
+        </details>
+    </article>
+
+    <article class="article" id="justifycontent">
+        <h3 class="titulo-de-artigo">Justify-content<h3>
+        <details class="button2">
+            <h4 class="titulo-contido">A propriedade justify-content é usada para alinhar os itens flexíveis na mesma linha. Tendo por vários valores</h4>
+            <h4 class="titulo-contido">Exemplo: justify-content: center;</h4>
+            <p>O center: valor que alinha os itens flexíveis no centro do contêiner desejado;</p>
+            <br>
+            <div class="container10">
+                <div class="contido">1</div>
+                <div class="contido">2</div>
+                <div class="contido">3</div>
+                <div class="contido">4</div>
+            </div>
+            <br>
+            <h4 class="titulo-contido">Exemplo: justify-content: Flex-start</h4>
+            <p>O flex-start: valor que alinha os itens flexíveis no início do contêiner (este é o padrão);</p>
+            <br>
+            <div class="container11">
+                <div class="contido">1</div>
+                <div class="contido">2</div>
+                <div class="contido">3</div>
+                <div class="contido">4</div>
+                </div>
+            <br>
+            <h4 class="titulo-contido">Exemplo: justify-content: Flex-end</h4>
+            <p>O flex-end: valor alinha os itens flexíveis no final do contêiner;</p>
+            <br>
+            <div class="container12">
+                <div class="contido">1</div>
+                <div class="contido">2</div>
+                <div class="contido">3</div>
+                <div class="contido">4</div>
+            </div>
+            <br>
+            <h4 class="titulo-contido">Exemplo: justify-content: space-around</h4>
+            <p>O space-around: valor que exibe os itens flexíveis com espaço antes, entre e depois das linhas:</p>
+            <br>
+            <div class="container13">
+                <div class="contido">1</div>
+                <div class="contido">2</div>
+                <div class="contido">3</div>
+                <div class="contido">4</div>
+            </div>
+            <br>
+            <h4 class="titulo-contido">Exemplo: justify-content: space-between</h4>
+            <p>O space-between: valor que exibe os itens flexíveis com espaço entre as linhas:</p>
+            <br>
+            <div class="container14">
+                <div class="contido">1</div>
+                <div class="contido">2</div>
+                <div class="contido">3</div>
+                <div class="contido">4</div>
+            </div>
+        </details>
+    </article>
+
+    <article class="article" id="alignitems">
+        <h3 class="titulo-de-artigo">Align items<h3>
+        <details class="button2">
+            <h4 class="titulo-contido">A propriedade align-items é usada para alinhar os itens flexíveis pelas linhas. Também tendo alguns valores.</h4>
+            <h4 class="titulo-contido">Exemplo: Align items: center;</h4>
+            <p>O center: valor que alinha os itens flexíveis no meio do contêiner:</p>
+            <br>
+            <div class="container15">
+                <div class="contido">1</div>
+                <div class="contido">2</div>
+                <div class="contido">3</div>
+                <div class="contido">4</div>
+            </div>
+            <br>
+            <h4 class="titulo-contido">Exemplo: Align-items: felx-start;</h4>
+            <p>O flex-start: valor que alinha os itens flexíveis na parte superior do contêiner:</p>
+            <br>
+            <div class="container16">
+                <div class="contido">1</div>
+                <div class="contido">2</div>
+                <div class="contido">3</div>
+                <div class="contido">4</div>
+            </div>
+            <br>
+            <h4 class="titulo-contido">Exemplos: Align-items: flex-end;</h4>
+            <p>O flex-end: valor que alinha os itens flexíveis na parte inferior do contêiner:</p>
+            <br>
+            <div class="container17">
+                <div class="contido">1</div>
+                <div class="contido">2</div>
+                <div class="contido">3</div>
+                <div class="contido">4</div>
+            </div>
+            <br>
+            <h4 class="titulo-contido">Exemplo: Align-items: stretch;</h4>
+            <p>O stretch: valor que estica os itens flexíveis para preencher o contêiner (este é o padrão);</p>
+            <br>
+            <div class="container18">
+                <div class="contido">1</div>
+                <div class="contido">2</div>
+                <div class="contido">3</div>
+                <div class="contido">4</div>
+            </div>
+            <br>
+            <h4 class="titulo-contido">Exemplo: Align-items: baseline</h4>
+            <p>O baseline: valor que alinha os itens flexíveis, como suas linhas de base alinham;</p>
+            <br>
+            <div class="container19">
+                <div class="contido">1</div>
+                <div class="contido">2</div>
+                <div class="contido">3</div>
+                <div class="contido">4</div>
+            </div>
+        </details>
+    </article>
+
+    <article class="article" id="aligncontent">
+        <h3 class="titulo-de-artigo">Align-Content</h3>
+        <details class="button2">
+            <h4 class="titulo-contido">A propriedade align-content é usada para alinhar as linhas flexíveis.E contém alguns valores</h4>
+            <h4 class="titulo-contido">Exemplo: align-content: space-between;</h4>
+            <p>O space-between: valor que exibe as linhas flexíveis com espaço igual entre elas:</p>
+            <br>
+            <div class="container20">
+                <div class="contido">1</div>
+                <div class="contido">2</div>
+                <div class="contido">3</div>
+                <div class="contido">4</div>
+                <div class="contido">5</div>
+                <div class="contido">6</div>
+                <div class="contido">7</div>
+                <div class="contido">8</div>
+                <div class="contido">9</div>
+                <div class="contido">10</div>
+                <div class="contido">11</div>
+                <div class="contido">12</div>
+                <div class="contido">13</div>
+                <div class="contido">14</div>
+                <div class="contido">15</div>
+                <div class="contido">16</div>
+                <div class="contido">17</div>
+                <div class="contido">18</div>
+                <div class="contido">19</div>
+                <div class="contido">20</div>
+                <div class="contido">21</div>
+                <div class="contido">22</div>
+            </div>
+            <br>
+            <h4 class="titulo-contido">Exemplo: align-content: space-around</h4>
+            <p>O space-around: valor que exibe as linhas flexíveis com espaço antes, entre e depois delas;</p>
+            <br>
+            <div class="container21">
+                <div class="contido">1</div>
+                <div class="contido">2</div>
+                <div class="contido">3</div>
+                <div class="contido">4</div>
+                <div class="contido">5</div>
+                <div class="contido">6</div>
+                <div class="contido">7</div>
+                <div class="contido">8</div>
+                <div class="contido">9</div>
+                <div class="contido">10</div>
+                <div class="contido">11</div>
+                <div class="contido">12</div>
+                <div class="contido">13</div>
+                <div class="contido">14</div>
+                <div class="contido">15</div>
+                <div class="contido">16</div>
+                <div class="contido">17</div>
+                <div class="contido">18</div>
+                <div class="contido">19</div>
+                <div class="contido">20</div>
+                <div class="contido">21</div>
+                <div class="contido">22</div>
+            </div>
+            <br>
+            <h4 class="titulo-contido">Exemplo: align-content: stretch</h4>
+            <p>O stretch: valor que estica as linhas flexíveis para ocupar o espaço restante (este é o padrão):</p>
+            <br>
+            <div class="container22">
+                <div class="contido">1</div>
+                <div class="contido">2</div>
+                <div class="contido">3</div>
+                <div class="contido">4</div>
+                <div class="contido">5</div>
+                <div class="contido">6</div>
+                <div class="contido">7</div>
+                <div class="contido">8</div>
+                <div class="contido">9</div>
+                <div class="contido">10</div>
+                <div class="contido">11</div>
+                <div class="contido">12</div>
+                <div class="contido">13</div>
+                <div class="contido">14</div>
+                <div class="contido">15</div>
+                <div class="contido">16</div>
+                <div class="contido">17</div>
+                <div class="contido">18</div>
+                <div class="contido">19</div>
+                <div class="contido">20</div>
+            </div>
+            <h4 class="titulo-contido">Exemplo: align-content: center</h4>
+            <p>O center: valor que exibe as linhas flexíveis no meio do contêiner;</p>
+            <div class="container23">
+                <div class="contido">1</div>
+                <div class="contido">2</div>
+                <div class="contido">3</div>
+                <div class="contido">4</div>
+                <div class="contido">5</div>
+                <div class="contido">6</div>
+                <div class="contido">7</div>
+                <div class="contido">8</div>
+                <div class="contido">9</div>
+                <div class="contido">10</div>
+                <div class="contido">11</div>
+                <div class="contido">12</div>
+                <div class="contido">13</div>
+                <div class="contido">14</div>
+                <div class="contido">15</div>
+                <div class="contido">16</div>
+                <div class="contido">17</div>
+                <div class="contido">18</div>
+                <div class="contido">19</div>
+                <div class="contido">20</div>
+                <div class="contido">21</div>
+                <div class="contido">22</div>
+                <div class="contido">23</div>
+                <div class="contido">24</div>
+                <div class="contido">25</div>
+                <div class="contido">26</div>
+                <div class="contido">27</div>
+                <div class="contido">28</div>
+                <div class="contido">29</div>
+                <div class="contido">30</div>
+            </div>
+            <br>
+            <h4 class="titulo-contido">Exemplos: align-content: flex-start</h4>
+            <p>O flex-start: valor que exibe as linhas flexíveis no início do contêiner aplicado:</p>
+            <div class="container24">
+                <div class="contido">1</div>
+                <div class="contido">2</div>
+                <div class="contido">3</div>
+                <div class="contido">4</div>
+                <div class="contido">5</div>
+                <div class="contido">6</div>
+                <div class="contido">7</div>
+                <div class="contido">8</div>
+                <div class="contido">9</div>
+                <div class="contido">10</div>
+                <div class="contido">11</div>
+                <div class="contido">12</div>
+                <div class="contido">13</div>
+                <div class="contido">14</div>
+                <div class="contido">15</div>
+                <div class="contido">16</div>
+                <div class="contido">17</div>
+                <div class="contido">18</div>
+                <div class="contido">19</div>
+                <div class="contido">20</div>
+                <div class="contido">21</div>
+                <div class="contido">22</div>
+                <div class="contido">23</div>
+                <div class="contido">24</div>
+                <div class="contido">25</div>
+                <div class="contido">26</div>
+                <div class="contido">27</div>
+                <div class="contido">28</div>
+                <div class="contido">29</div>
+                <div class="contido">30</div>
+            </div>
+            <br>
+            <h4 class="titulo-contido">Exemplo: align-content: flex-end</h4>
+            <p>O flex-end: valor exibe as linhas flexíveis no final do contêiner;</p>
+            <div class="container25">
+                <div class="contido">1</div>
+                <div class="contido">2</div>
+                <div class="contido">3</div>
+                <div class="contido">4</div>
+                <div class="contido">5</div>
+                <div class="contido">6</div>
+                <div class="contido">7</div>
+                <div class="contido">8</div>
+                <div class="contido">9</div>
+                <div class="contido">10</div>
+                <div class="contido">11</div>
+                <div class="contido">12</div>
+                <div class="contido">13</div>
+                <div class="contido">14</div>
+                <div class="contido">15</div>
+                <div class="contido">16</div>
+                <div class="contido">17</div>
+                <div class="contido">18</div>
+                <div class="contido">19</div>
+                <div class="contido">20</div>
+                <div class="contido">21</div>
+                <div class="contido">22</div>
+                <div class="contido">23</div>
+                <div class="contido">24</div>
+                <div class="contido">25</div>
+                <div class="contido">26</div>
+                <div class="contido">27</div>
+                <div class="contido">28</div>
+                <div class="contido">29</div>
+                <div class="contido">30</div>
+            </div>
+        </details>
+    </article>
+    <article class="article" id="perfectcentering">
+        <h3 class="titulo-de-artigo">Perfect Centering</h3>
+        <h4 class="titulo-contido">Defina as propriedades justify-contente: center, e como o item flexível ficará perfeitamente centralizado:align-items: center</h4>
+        <div class="container26">
+            <div class="contido">A</div>
         </div>
+    </article>
     <br>
-    <h4 class="titulo-contido">Exemplo: justify-content: Flex-end</h4>
-    <p>O flex-end: valor alinha os itens flexíveis no final do contêiner;</p>
     <br>
-    <div class="container12">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-    </div>
-    <br>
-    <h4 class="titulo-contido">Exemplo: justify-content: space-around</h4>
-    <p>O space-around: valor que exibe os itens flexíveis com espaço antes, entre e depois das linhas:</p>
-    <br>
-    <div class="container13">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-    </div>
-    <br>
-    <h4 class="titulo-contido">Exemplo: justify-content: space-between</h4>
-    <p>O space-between: valor que exibe os itens flexíveis com espaço entre as linhas:</p>
-    <br>
-    <div class="container14">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-    </div>
-    <br>
-    <h3 class="titulo-de-artigo">Align items<h3>
-    <h4 class="titulo-contido">Exemplo: Align items: center;</h4>
-    <p>O center: valor que alinha os itens flexíveis no meio do contêiner:</p>
-    <br>
-    <div class="container15">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-    </div>
-    <br>
-    <h4 class="titulo-contido">Exemplo: Align-items: felx-start;</h4>
-    <p>O flex-start: valor que alinha os itens flexíveis na parte superior do contêiner:</p>
-    <br>
-    <div class="container16">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-    </div>
-    <br>
-    <h4 class="titulo-contido">Exemplos: Align-items: flex-end;</h4>
-    <p>O flex-end: valor que alinha os itens flexíveis na parte inferior do contêiner:</p>
-    <br>
-    <div class="container17">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-    </div>
-    <br>
-    <h4>Exemplo: Align-items: stretch;</h4>
-    <p>O stretch: valor que estica os itens flexíveis para preencher o contêiner (este é o padrão);</p>
-    <br>
-    <div class="container18">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-    </div>
-    <br>
-    <h4 class="titulo-contido">Exemplo: Align-items: baseline</h4>
-    <p>O baseline: valor que alinha os itens flexíveis, como suas linhas de base alinham;</p>
-    <br>
-    <div class="container19">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-    </div>
-    <h3 class="titulo-de-artigo">Align-Content</h3>
-    <h4 class="titulo-contido">A align-content: propriedade é usada para alinhar as linhas flexíveis.</h4>
-    <h4 class="titulo-contido">Exemplo: align-content: space-between;</h4>
-    <p>O space-between: valor que exibe as linhas flexíveis com espaço igual entre elas:</p>
-    <br>
-    <div class="container20">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-        <div class="contido">5</div>
-        <div class="contido">6</div>
-        <div class="contido">7</div>
-        <div class="contido">8</div>
-        <div class="contido">9</div>
-        <div class="contido">10</div>
-        <div class="contido">11</div>
-        <div class="contido">12</div>
-        <div class="contido">13</div>
-        <div class="contido">14</div>
-        <div class="contido">15</div>
-        <div class="contido">16</div>
-        <div class="contido">17</div>
-        <div class="contido">18</div>
-        <div class="contido">19</div>
-        <div class="contido">20</div>
-        <div class="contido">21</div>
-        <div class="contido">22</div>
-    </div>
-    <br>
-    <h4 class="titulo-contido">Exemplo: align-content: space-around</h4>
-    <p>O space-around: valor que exibe as linhas flexíveis com espaço antes, entre e depois delas;</p>
-    <br>
-    <div class="container21">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-        <div class="contido">5</div>
-        <div class="contido">6</div>
-        <div class="contido">7</div>
-        <div class="contido">8</div>
-        <div class="contido">9</div>
-        <div class="contido">10</div>
-        <div class="contido">11</div>
-        <div class="contido">12</div>
-        <div class="contido">13</div>
-        <div class="contido">14</div>
-        <div class="contido">15</div>
-        <div class="contido">16</div>
-        <div class="contido">17</div>
-        <div class="contido">18</div>
-        <div class="contido">19</div>
-        <div class="contido">20</div>
-        <div class="contido">21</div>
-        <div class="contido">22</div>
-    </div>
-    <br>
-    <h4 class="titulo-contido">Exemplo: align-content: stretch</h4>
-    <p>O stretch: valor que estica as linhas flexíveis para ocupar o espaço restante (este é o padrão):</p>
-    <br>
-    <div class="container22">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-        <div class="contido">5</div>
-        <div class="contido">6</div>
-        <div class="contido">7</div>
-        <div class="contido">8</div>
-        <div class="contido">9</div>
-        <div class="contido">10</div>
-        <div class="contido">11</div>
-        <div class="contido">12</div>
-        <div class="contido">13</div>
-        <div class="contido">14</div>
-        <div class="contido">15</div>
-        <div class="contido">16</div>
-        <div class="contido">17</div>
-        <div class="contido">18</div>
-        <div class="contido">19</div>
-        <div class="contido">20</div>
-    </div>
-    <h4 class="titulo-contido">Exemplo: align-content: center</h4>
-    <p>O center: valor que exibe as linhas flexíveis no meio do contêiner;</p>
-    <div class="container23">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-        <div class="contido">5</div>
-        <div class="contido">6</div>
-        <div class="contido">7</div>
-        <div class="contido">8</div>
-        <div class="contido">9</div>
-        <div class="contido">10</div>
-        <div class="contido">11</div>
-        <div class="contido">12</div>
-        <div class="contido">13</div>
-        <div class="contido">14</div>
-        <div class="contido">15</div>
-        <div class="contido">16</div>
-        <div class="contido">17</div>
-        <div class="contido">18</div>
-        <div class="contido">19</div>
-        <div class="contido">20</div>
-        <div class="contido">21</div>
-        <div class="contido">22</div>
-        <div class="contido">23</div>
-        <div class="contido">24</div>
-        <div class="contido">25</div>
-        <div class="contido">26</div>
-        <div class="contido">27</div>
-        <div class="contido">28</div>
-        <div class="contido">29</div>
-        <div class="contido">30</div>
-    </div>
-    <br>
-    <h4 class="titulo-contido">Exemplos: align-content: flex-start</h4>
-    <p>O flex-start: valor que exibe as linhas flexíveis no início do contêiner aplicado:</p>
-    <div class="container24">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-        <div class="contido">5</div>
-        <div class="contido">6</div>
-        <div class="contido">7</div>
-        <div class="contido">8</div>
-        <div class="contido">9</div>
-        <div class="contido">10</div>
-        <div class="contido">11</div>
-        <div class="contido">12</div>
-        <div class="contido">13</div>
-        <div class="contido">14</div>
-        <div class="contido">15</div>
-        <div class="contido">16</div>
-        <div class="contido">17</div>
-        <div class="contido">18</div>
-        <div class="contido">19</div>
-        <div class="contido">20</div>
-        <div class="contido">21</div>
-        <div class="contido">22</div>
-        <div class="contido">23</div>
-        <div class="contido">24</div>
-        <div class="contido">25</div>
-        <div class="contido">26</div>
-        <div class="contido">27</div>
-        <div class="contido">28</div>
-        <div class="contido">29</div>
-        <div class="contido">30</div>
-    </div>
-    <br>
-    <h4 class="titulo-contido">Exemplo: align-content: flex-end</h4>
-    <p>O flex-end: valor exibe as linhas flexíveis no final do contêiner;</p>
-    <div class="container25">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-        <div class="contido">5</div>
-        <div class="contido">6</div>
-        <div class="contido">7</div>
-        <div class="contido">8</div>
-        <div class="contido">9</div>
-        <div class="contido">10</div>
-        <div class="contido">11</div>
-        <div class="contido">12</div>
-        <div class="contido">13</div>
-        <div class="contido">14</div>
-        <div class="contido">15</div>
-        <div class="contido">16</div>
-        <div class="contido">17</div>
-        <div class="contido">18</div>
-        <div class="contido">19</div>
-        <div class="contido">20</div>
-        <div class="contido">21</div>
-        <div class="contido">22</div>
-        <div class="contido">23</div>
-        <div class="contido">24</div>
-        <div class="contido">25</div>
-        <div class="contido">26</div>
-        <div class="contido">27</div>
-        <div class="contido">28</div>
-        <div class="contido">29</div>
-        <div class="contido">30</div>
-    </div>
-    <br>
-    <h3 class="titulo-de-artigo">Perfect Centering</h3>
-    <h4 class="titulo-contido">Defina as propriedades justify-contente e como o item flexível ficará perfeitamente centralizado:align-items: center</h4>
-    <div class="container26">
-        <div class="contido">
-            <p>ÚNICO</p>
-        </div>
-    </div>
-    
+    <footer id="contatos">
+        <h3 class="titulo-de-artigo">Contatos</h3>
+        <h4 class="rodape">Email: miguel2020allan@gmail.com </h4>
+        <h4 class="rodape">Github:<a href="https://github.com/miguelsouz"> Miguel Souza</a> </h4>
+        <h4 class="rodape">Telefone: 55+(11) 93227-7246.</h4>
+        <h4 class="rodape">Autor: Miguel Allan.</h4>
+    </footer>
 </body>
 </html>
-    

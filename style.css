@@ -35,23 +35,27 @@ body {
 }
 
 .container {
-    height: 300px;
+    height: 400px;
     background-color: antiquewhite;
+    box-shadow:#000 6px 8px 4px;
+    box-shadow: 5px 8px 8px #000;
     border: 10px 5px solid #000; /*Equivalente á cor #000000 */
     display: flex;
 }
 
 .container2 {
-    height: 300px;
+    height: 330px;
     background-color: antiquewhite;
+    box-shadow:#000 6px 8px 4px;
     border: 10px 5px solid #000; /*Equivalente á cor #000000 */
     display: flex;
     flex-direction: column;
 }
 
 .container3 {
-    height: 300px;
+    height: 330px;
     background-color: antiquewhite;
+    box-shadow:#000 6px 8px 4px;
     border: 10px 5px solid #000; /*Equivalente á cor #000000 */
     display: flex;
     flex-direction: column-reverse;
@@ -60,6 +64,7 @@ body {
 .container4 {
     height: 300px;
     background-color: antiquewhite;
+    box-shadow:#000 6px 8px 4px;
     border: 10px 5px solid #000; /*Equivalente á cor #000000 */
     display: flex;
     flex-direction: row;
@@ -68,6 +73,7 @@ body {
 .container5 {
     height: 300px;
     background-color: antiquewhite;
+    box-shadow:#000 6px 8px 4px;
     border: 10px 5px solid #000; /*Equivalente á cor #000000 */
     display: flex;
     flex-direction: row-reverse;
@@ -76,6 +82,7 @@ body {
 .container6 {
     height: 300px;
     background-color: antiquewhite;
+    box-shadow:#000 6px 8px 4px;
     border: 10px 5px solid #000; /*Equivalente á cor #000000 */
     display: flex;
     flex-wrap: wrap;
@@ -92,6 +99,7 @@ body {
 .container8 {
     height: 300px;
     background-color: antiquewhite;
+    box-shadow:#000 6px 8px 4px;
     border: 10px 5px solid #000; /*Equivalente á cor #000000 */
     display: flex;
     flex-wrap: wrap-reverse;
@@ -100,6 +108,7 @@ body {
 .container9 {
     height: 300px;
     background-color: antiquewhite;
+    box-shadow:#000 6px 8px 4px;
     border: 10px 5px solid #000; /*Equivalente á cor #000000 */
     display: flex;
     flex-flow: row wrap;
@@ -108,6 +117,7 @@ body {
 .container10 {
     height: 300px;
     background-color: antiquewhite;
+    box-shadow:#000 6px 8px 4px;
     border: 10px 5px solid #000; /*Equivalente á cor #000000 */
     display: flex;
     justify-content: center;
@@ -116,6 +126,7 @@ body {
 .container11 {
     height: 300px;
     background-color: antiquewhite;
+    box-shadow:#000 6px 8px 4px;
     border: 10px 5px solid #000; /*Equivalente á cor #000000 */
     display: flex;
     justify-content: flex-start;
@@ -124,6 +135,7 @@ body {
 .container12 {
     height: 300px;
     background-color: antiquewhite;
+    box-shadow:#000 6px 8px 4px;
     border: 10px 5px solid #000; /*Equivalente á cor #000000 */
     display: flex;
     justify-content: flex-end;
@@ -132,6 +144,7 @@ body {
 .container13 {
     height: 300px;
     background-color: antiquewhite;
+    box-shadow:#000 6px 8px 4px;
     border: 10px 5px solid #000; /*Equivalente á cor #000000 */
     display: flex;
     justify-content: space-around;
@@ -140,6 +153,7 @@ body {
 .container14 {
     height: 300px;
     background-color: antiquewhite;
+    box-shadow:#000 6px 8px 4px;
     border: 10px 5px solid #000; /*Equivalente á cor #000000 */
     display: flex;
     justify-content: space-between;
@@ -148,6 +162,7 @@ body {
 .container15 {
     height: 300px;
     background-color: antiquewhite;
+    box-shadow:#000 6px 8px 4px;
     border: 10px 5px solid #000; /*Equivalente á cor #000000 */
     display: flex;
     align-items: center;
@@ -156,6 +171,7 @@ body {
 .container16 {
     height: 300px;
     background-color: antiquewhite;
+    box-shadow:#000 6px 8px 4px;
     border: 10px 5px solid #000; /*Equivalente á cor #000000 */
     display: flex;
     align-items: flex-start;
@@ -164,6 +180,7 @@ body {
 .container17 {
     height: 300px;
     background-color: antiquewhite;
+    box-shadow:#000 6px 8px 4px;
     border: 10px 5px solid #000; /*Equivalente á cor #000000 */
     display: flex;
     align-items: flex-end;
@@ -172,6 +189,7 @@ body {
 .container18 {
     height: 300px;
     background-color: antiquewhite;
+    box-shadow:#000 6px 8px 4px;
     border: 10px 5px solid #000; /*Equivalente á cor #000000 */
     display: flex;
     align-items: stretch;
@@ -180,6 +198,7 @@ body {
 .container19 {
     height: 300px;
     background-color: antiquewhite;
+    box-shadow:#000 6px 8px 4px;
     border: 10px 5px solid #000; /*Equivalente á cor #000000 */
     display: flex;
     align-items: baseline;
@@ -188,6 +207,7 @@ body {
 .container20 {
     height: 500px;
     background-color: antiquewhite;
+    box-shadow:#000 6px 8px 4px;
     border: 10px 5px solid #000; /*Equivalente á cor #000000 */
     display: flex;
     flex-wrap: wrap;
@@ -197,6 +217,7 @@ body {
 .container21 {
     height: 500px;
     background-color: antiquewhite;
+    box-shadow:#000 6px 8px 4px;
     border: 10px 5px solid #000; /*Equivalente á cor #000000 */
     display: flex;
     flex-wrap: wrap;
@@ -206,6 +227,7 @@ body {
 .container22 {
     height: 400px;
     background-color: antiquewhite;
+    box-shadow:#000 6px 8px 4px;
     border: 10px 5px solid #000; /*Equivalente á cor #000000 */
     display: flex;
     flex-wrap: wrap;
@@ -215,6 +237,7 @@ body {
 .container23 {
     height: 500px;
     background-color: antiquewhite;
+    box-shadow:#000 6px 8px 4px;
     border: 10px 5px solid #000; /*Equivalente á cor #000000 */
     flex-wrap:wrap;
     display: flex;
@@ -224,6 +247,7 @@ body {
 .container24 {
     height: 500px;
     background-color: antiquewhite;
+    box-shadow:#000 6px 8px 4px;
     border: 10px 5px solid #000; /*Equivalente á cor #000000 */
     flex-wrap: wrap;
     display: flex;
@@ -233,6 +257,7 @@ body {
 .container25 {
     height: 500px;
     background-color: antiquewhite;
+    box-shadow:#000 6px 8px 4px;
     border: 10px 5px solid #000; /*Equivalente á cor #000000 */
     flex-wrap: wrap;
     display: flex;
@@ -242,11 +267,19 @@ body {
 .container26 {
     height: 300px;
     background-color: antiquewhite;
+    box-shadow:#000 6px 8px 4px;
     border: 10px 5px solid #000; /*Equivalente á cor #000000 */
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.article {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .titulo-de-pagina {
     color:#000;
     text-align:center;
@@ -280,14 +313,59 @@ body {
     margin-bottom: 10px;
     text-align: center;
 }
+.rodape {
+    color:#ebe0e0;
+    line-height: 1.5;
+    text-shadow: #000 4px 4px 5px;
+    font-weight:bold;
+    font-size: 20pt;
+    font-family: var(--font-secundaria);
+    font-style:italic;
+    margin-bottom: 10px;
+}
 
 .titulo-de-secao {
-    color:var(--cor-primaria);
+    color:var(--cor-primária);
     line-height: 1.8;
     font-weight: bold;
     font-size: 25pt;
     font-family: var(--font-secundaria);
 }
+
+table, td, th {
+    border: 2px solid black;
+}
+  
+  table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
 
 p {
     color: var(--cor-secundaria);
@@ -302,6 +380,7 @@ div.contido{
     line-height: 1.5;
     text-shadow: #000 4px 4px 5px;
     font-weight:bold;
+    padding: 1.5%;
     font-size: 20pt;
     font-family: var(--font-secundaria);
     font-style:italic;
@@ -309,3 +388,21 @@ div.contido{
     text-align: center;
     align-items: center;
 }  
+
+.button2 {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+  }
+  
+  .button2:hover {
+    box-shadow: 0 12px 16px 0 rgb(0, 0, 0),0 17px 50px 0 rgb(0, 0, 0);
+  }
